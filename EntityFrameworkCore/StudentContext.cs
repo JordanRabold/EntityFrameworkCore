@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace EntityFrameworkCore
 {
-    internal class StudentContext
+    internal class StudentContext : DbContext
     {
     }
 }
