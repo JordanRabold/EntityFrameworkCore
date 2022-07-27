@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 
 namespace EntityFrameworkCore
 {
+    // Creating an EF Core Database 
     public class StudentContext : DbContext
     {
         public StudentContext() // constructor
@@ -15,7 +16,8 @@ namespace EntityFrameworkCore
         }
 
         // protected override was found here: https://docs.microsoft.com/en-us/ef/core/get-started/overview/first-app?tabs=netcore-cli#create-the-model
-        protected override void OnConfiguring(DbContextOptionsBuilder options) // connects to SQLServer
+        // connecting to SQLServer or Database
+        protected override void OnConfiguring(DbContextOptionsBuilder options) 
         {
             // EF Connection Strings found here: https://docs.microsoft.com/en-us/ef/core/miscellaneous/connection-strings#aspnet-core
             // Server = The server we are connecting to. LocalDB is included with VS
